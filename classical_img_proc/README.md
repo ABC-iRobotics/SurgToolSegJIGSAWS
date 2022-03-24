@@ -6,9 +6,9 @@ In the case of Minimally Invasive Surgery (MIS), the surgeon reaches the interna
 ## Data 
 We tried different datasets for this algorithm.
 The three datasets are the following:
-  * JIGSAWS
-  * Synthetis MICCAI
-  * MICCAI
+  * JIGSAWS (https://cirl.lcsr.jhu.edu/research/hmm/datasets/jigsaws_release/)
+  * Synthetis MICCAI (https://www.ucl.ac.uk/interventional-surgical-sciences/weiss-open-research/weiss-open-data-server/ex-vivo-dvrk-segmentation-dataset-kinematic-data)
+  * MICCAI (https://endovis.grand-challenge.org/)
 
 ## Dependencies
   * Numpy==1.20.2  
@@ -55,7 +55,7 @@ You should organize your folders the following way:
     │   │   ├── SYNTHETIC
     
 To get a segmentation with classical image processing methods we run the following script:
-    python train.py --device-ids 0 --batch-size 5 --fold 0 --workers 0 --lr 0.0001 --n-epochs 1  --jaccard-weight 1 --model LinkNet34
+    
     python opticalflow.py --original_height 480 --original_width 640 --startx 96 --starty 0 --data_type JIGSAWS --cropped_train_path steps/Cropped/JIGSAWS
     
 ## Citation
