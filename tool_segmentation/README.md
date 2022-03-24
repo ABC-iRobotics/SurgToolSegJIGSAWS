@@ -36,7 +36,7 @@ You should organize your folders the following way:
     │       │   ├── images
     │       .......................
     ├── predictions
-### Training
+### 1. Training
 For training put and organize the training data as it is shown above. We used 9 videos for training, therefore there are 9 instument_dataset folder.
 
 We used 3-fold-cross validation, so with 'fold' it can be set how we split the data into validation and training set.
@@ -45,7 +45,7 @@ The main file for training is  -  ``train.py``. We used the following bash scrip
     
     python train.py --device-ids 0 --batch-size 5 --fold 0 --workers 0 --lr 0.0001 --n-epochs 1  --jaccard-weight 1 --model LinkNet34
 
-### Mask generation
+### 2. Mask generation
 With -  ``generate_mask.py`` you can generate masks with the help of pre-trained models. 
 
 First, the frames are made with the help of  -  ``JIGSAWS_prepare_data.py``, where the path of the video is set, and also LAB color space conversion can be done which is useful if we used models trained on MICCAI dataset.
@@ -59,7 +59,7 @@ Then we used the following script to create the masks:
     python generate_masks.py --model_path data/models/JIGSAWStrained/UNet --model_type UNet --output_path predictions --batch-size 1 --fold 0 --workers 0
     --pred_data_path data/test_JIGSAWS/Suturing/Nothing
     
-### Evaluation
+### 3. Evaluation
 Evaluation is done with -  ``evaluate.py``.
 
 It calculates the Jaccard-index, Dice coefficients and Accuracy.
