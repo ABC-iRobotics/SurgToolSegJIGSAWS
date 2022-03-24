@@ -55,7 +55,7 @@ You should organize your folders the following way:
     │   │   ├── SYNTHETIC
     
 To get a segmentation with classical image processing methods we run the following script:
-    
-    python 
+    python train.py --device-ids 0 --batch-size 5 --fold 0 --workers 0 --lr 0.0001 --n-epochs 1  --jaccard-weight 1 --model LinkNet34
+    python opticalflow.py --original_height 480 --original_width 640 --startx 96 --starty 0 --data_type JIGSAWS --cropped_train_path steps/Cropped/JIGSAWS
     
 ## Citation
