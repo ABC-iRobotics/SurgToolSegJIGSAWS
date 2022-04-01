@@ -59,6 +59,8 @@ Then we used the following script to create the masks:
     python generate_masks.py --model_path data/models/JIGSAWStrained/UNet --model_type UNet --output_path predictions --batch-size 1 --fold 0 --workers 0
     --pred_data_path data/test_JIGSAWS/Suturing/Nothing
     
+In drive folders you can find models, which were trained on JIGSAWS.
+    
 ### 3. Evaluation
 Evaluation is done with -  ``evaluate.py``.
 
