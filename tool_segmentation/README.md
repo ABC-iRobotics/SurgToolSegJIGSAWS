@@ -14,6 +14,7 @@ We used JIGSAWS dataset, which can be access freely online. The ground truth dat
   
 To install these dependencies you can use requirements.txt file.   
 ## Instructions
+This work is based on https://github.com/ternaus/robot-surgery-segmentation.
 You should organize your folders the following way:
 
     ├── data
