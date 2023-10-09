@@ -50,4 +50,3 @@ You should organize your folders the following way:
 First the frames are created with the  -  ``video_to_frame.py`` file where you have to set the directory of the JIGSAWS video. 
 Then, the ground truth labels are generated for this video with the help of  -  ``ground_truth_generation.py`` file.
     
-## Citation
