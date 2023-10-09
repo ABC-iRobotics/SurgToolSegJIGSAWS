@@ -58,4 +58,3 @@ To get a segmentation with classical image processing methods we run the followi
     
     python opticalflow.py --original_height 480 --original_width 640 --startx 96 --starty 0 --data_type JIGSAWS --cropped_train_path steps/Cropped/JIGSAWS
     
-## Citation
