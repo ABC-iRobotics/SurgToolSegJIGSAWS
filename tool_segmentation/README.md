@@ -70,4 +70,3 @@ It calculates the Jaccard-index, Dice coefficients and Accuracy.
 We used the following script:
 
     python evaluate.py --target_path predictions --gt_path data/train_JIGSAWS/instrument_dataset_1
-## Citation
