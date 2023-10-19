@@ -53,7 +53,7 @@ First, the frames are made with the help of  -  ``JIGSAWS_prepare_data.py``, whe
 
 We used the following script for creating the files from videos:
     
-    python JIGSAWS_prepare_data.py --path_of_video (Your folder) --task_type Suturing --type_of preprocess --Nothing
+    python JIGSAWS_prepare_data.py --path_of_video (Your folder) --task_type Suturing --type_of_preprocess Nothing
     
 Then we used the following script to create the masks:
 
